@@ -1,0 +1,9 @@
+// 02.Tools/_a.functions.scss
+
+@function var($variable) {
+    @return var(--#{$variable})
+};
+
+@function varMeta($variable) {
+    @return var(--#{meta.inspect($variable)})
+}
