@@ -22,6 +22,6 @@ $font-serif: 'Source Serif Pro', 'Times', 'Times New Roman', 'Georgia', serif;
 
     // variáveis de fontes
     // 1 - A função inspect() foi usada para que a fonte "Source Sans Pro"
-    //[...] permaneça com as aspas no css final.
+    // ... permaneça com as aspas no css final.
     --font-sansserif: #{inspect($font-sansserif)}; // 1 //
 }
