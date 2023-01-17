@@ -1,15 +1,5 @@
 // 02.Tools/_a.functions.scss
 
-//todo: verificar se as funções var() e varMeta() funcionam
-@function var($variable) {
-    @return var(--#{$variable})
-};
-
-@function varMeta($variable) {
-    @return var(--#{meta.inspect($variable)})
-};
-// -----------------------------------------------------------
-
 @function dark($color, $percent) {
     @return mix($color, black, $percent);
 };
