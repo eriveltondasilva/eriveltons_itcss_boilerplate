@@ -1,51 +1,59 @@
-///ITCSS
 
-01.Settings | abstracts
+// ========================================
+// ITCSS -> Arquitetura CSS/SCSS
+// ========================================
+
+01.Settings || Abstracts
 	_.index.scss
-	_a.settings.scss ou _a.global.scss	//
-	_b.variables.scss	//Variáveis sass
+	_a.global.scss
+	_b.variables.scss
 	
-02.Tools | abstracts
+02.Tools || Abstracts
 	_.index.scss
-	_a.functions.scss	//Funções sass
-	_b.mixins.scss	//Mixins sass
-	_c.placeholders.scss	//Placeholders sass
+	_a.functions.scss
+	_b.mixins.scss
+	_c.placeholders.scss
 	
-03.Vendors | base
+03.Vendors || Base
 	_.index.scss
-	_a.normalize.scss	//Reset
-	_b.bootstrap_5.2.3.scss
+	_a.normalize.scss
 	
-04.Generics | base
+04.Generics || Base
 	_.index.scss
-	_a.generics.scss	//
-	_b.typography.scss	//
+	_a.generics.scss
+	_b.typography.scss
 	
-05.Elements | base
+05.Elements || Base
 	_.index.scss
-	_a.elements.scss	//
+	_a.elements.scss
 	
 06.Layout
 	_.index.scss
-	_a.global.scss	//
+	_a.global.scss
 	
-07.Components
+07.Components || Module
 	_.index.scss
 	_a.buttons.scss
-	
-08.Themes
-	_.index.scss
-	_a.dark.scss	//
-	
-09.Utilities
-	_.index.scss
-	_a.utilities.scss	//
-	_b.hacks.scss ou _shame.scss	//
 
-//SMACSS
+08.Objects || Module
+	_.index.scss
+	_a.objects.scss
+	
+09.Themes
+	_.index.scss
+	_a.dark.scss
+	
+10.Utilities
+	_.index.scss
+	_a.hacks.scss
+	_b.shame.scss
+
+// ========================================
+// SMACSS -> Arquitetura Escalável e Modular para CSS
+// ========================================
 
 1.Base
-2.Layout
+2.Layout -- l-*
 3.Module
-4.State
+4.State -- is-* ou has-*
 5.Theme

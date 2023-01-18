@@ -1,4 +1,9 @@
-// 05.Elements/_a.elements.scss
+// *url('05.Elements/_a.elements.scss')
+
+body {
+    background-color: var(--color-background);
+    height: inherit;
+}
 
 a {
     text-decoration: none;
@@ -6,9 +11,9 @@ a {
 
 hr {
     display: block;
-    height: 1px;
-    border: 0;
     border-top: 1px solid #ccc;
+    border: 0;
+    height: 1px;
     margin: 1em 0;
     padding: 0;
 }

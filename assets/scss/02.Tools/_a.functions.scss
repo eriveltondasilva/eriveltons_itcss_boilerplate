@@ -1,10 +1,9 @@
-// 02.Tools/_a.functions.scss
+// *url('02.Tools/_a.functions.scss')
 
 @function dark($color, $percent) {
-    @return mix($color, black, $percent);
+    @return mix($color, #000, $percent);
 };
 
 @function light($color, $percent) {
-    @return mix($color, white, $percent);
+    @return mix($color, #fff, $percent);
 };
-
