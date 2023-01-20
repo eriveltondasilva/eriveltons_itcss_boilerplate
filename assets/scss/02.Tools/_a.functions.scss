@@ -2,8 +2,18 @@
 
 @function dark($color, $percent) {
     @return mix($color, #000, $percent);
-};
+}
+
+;
 
 @function light($color, $percent) {
     @return mix($color, #fff, $percent);
-};
+}
+
+;
+
+@function color($color) {
+    @return get($colors, $color);
+}
+
+;
