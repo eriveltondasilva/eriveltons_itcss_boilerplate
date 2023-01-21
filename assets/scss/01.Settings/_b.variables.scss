@@ -9,6 +9,20 @@ $colors: (
     'text': #222,
 );
 
+$colors-dark: (
+    'primary': darkblue,
+    'secondary': darkgreen,
+    'background': black,
+    'text': snow,
+);
+
+// -> breakpoints:
+$breakpoints: (
+    'small': 600px,
+    'med': 900px,
+    'large': 1200px,
+);
+
 // -> Fontes:
 $font-sansserif: (
     'Source Sans Pro',
@@ -32,15 +46,9 @@ $font-monospace: (
     monospace,
 );
 
-// -> breakpoints:
-$breakpoints: (
-    'small': 767px,
-    'medium': 992px,
-    'large': 1200px,
-);
-
 // ========== VARIÁVEIS CSS ==========
 :root {
+
     /* !variáveis de cores */
     @each $name-color,
     $value-color in $colors {

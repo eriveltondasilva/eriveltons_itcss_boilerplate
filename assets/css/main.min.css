@@ -67,7 +67,11 @@ textarea {
 }
 
 .dark:root {
-  /* !variáveis de cores */
+  /* !variáveis de cores do dark mode */
+  --color-primary: #000099;
+  --color-secondary: #009900;
+  --color-background: #313131;
+  --color-text: lightgray;
 }
 
 .is-hidden {

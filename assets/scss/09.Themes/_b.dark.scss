@@ -1,24 +1,24 @@
 // *url('/assets/scss/09.Themes/_b.dark.scss')
 
 .dark:root {
-        // variáveis sass
-        // $color-primary-dark: dark($color-primary, 60%);
-        // $color-text-dark: light($color-text, 10%);
-        // $color-background-dark: dark($color-background, 10%);
+    /* !variáveis de cores do dark mode */
+    @each $name-color,
+    $value-color in $colors {
+        @if $name-color == 'text' {
+            --color-#{$name-color}: #{light($value-color, 20%)};
+        }
 
-        // variáveis css
-        // --color-primary: #{$color-primary-dark};
-        // --color-text: #{$color-text-dark};
-        // --color-background: #{$color-background-dark};
+        @else if $name-color == 'background' {
+            --color-#{$name-color}: #{dark($value-color, 20%)};
+        }
 
-    /* !variáveis de cores */
-    // @each $name-color,
-    // $value-color in $colors {
+        @else {
+            --color-#{$name-color}: #{dark($value-color, 60%)};
+        }
+    };
 
-
-    //     --color-#{$name-color}: @if $name-color ==text {
-    //         #{dark($value-color, 60%)};
-    //     }
+    // TODO: código para definir cada cor do modo dark, basta comentar o código acima e editar o mao colors-dark 
+    // @each $name-color, $value-color in $colors-dark {
+    //     --color-#{$name-color}: #{$value-color};
     // }
-
 }

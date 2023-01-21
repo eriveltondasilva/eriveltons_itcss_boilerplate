@@ -11,3 +11,7 @@
 @function color($color) {
     @return map-get($colors, $color);
 };
+
+@function color-dark($color) {
+    @return map-get($colors-dark, $color);
+};
