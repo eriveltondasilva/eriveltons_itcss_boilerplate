@@ -9,5 +9,5 @@
 };
 
 @function color($color) {
-    @return get($colors, $color);
+    @return map-get($colors, $color);
 };
