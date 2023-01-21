@@ -1,59 +1,37 @@
+ITCSS -> Arquitetura de CSS/SASS
 
-// ========================================
-// ITCSS -> Arquitetura CSS/SCSS
-// ========================================
-
-01.Settings || Abstracts
-	_.index.scss
-	_a.global.scss
-	_b.variables.scss
-	
-02.Tools || Abstracts
-	_.index.scss
-	_a.functions.scss
-	_b.mixins.scss
-	_c.placeholders.scss
-	
-03.Vendors || Base
-	_.index.scss
-	_a.normalize.scss
-	
-04.Generics || Base
-	_.index.scss
-	_a.generics.scss
-	_b.typography.scss
-	
-05.Elements || Base
-	_.index.scss
-	_a.elements.scss
-	
+01.Settings
+|	_.index.scss
+|	_a.global.scss
+|	_b.variables.scss	
+02.Tools
+|	_.index.scss
+|	_a.functions.scss
+|	_b.mixins.scss
+|	_c.placeholders.scss
+03.Vendors
+|	_.index.scss
+04.Generics
+|	_.index.scss
+|	_a.generics.scss
+|	_b.typography.scss
+05.Elements
+|	_.index.scss
+|	_a.elements.scss
 06.Layout
-	_.index.scss
-	_a.global.scss
-	
-07.Components || Module
-	_.index.scss
-	_a.buttons.scss
-
-08.Objects || Module
-	_.index.scss
-	_a.objects.scss
-	
+|	_.index.scss
+|	_a.grid.scss	
+07.Components
+|	_.index.scss
+|	_a.components.scss
+08.Objects
+|	_.index.scss
+|	_a.objects.scss
 09.Themes
-	_.index.scss
-	_a.dark.scss
-	
+|	_.index.scss
+|	_a.no-js.scss	
+|	_b.dark.scss	
 10.Utilities
-	_.index.scss
-	_a.hacks.scss
-	_b.shame.scss
-
-// ========================================
-// SMACSS -> Arquitetura Escalável e Modular para CSS
-// ========================================
-
-1.Base
-2.Layout -- l-*
-3.Module
-4.State -- is-* ou has-*
-5.Theme
+|	_.index.scss
+|	_a.hacks.scss
+|	_b.shame.scss

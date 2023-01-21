@@ -1,8 +1,7 @@
 // *url('/assets/scss/01.Settings/_b.variables.scss');
-// !VARIÁVEIS SASS
 
-// => Colors
-
+// ========== VARIÁVEIS SASS ==========
+// -> Cores:
 $colors: (
     'primary': #00f,
     'secondary': #0f0,
@@ -10,7 +9,7 @@ $colors: (
     'text': #222,
 );
 
-// => Fonts
+// -> Fontes:
 $font-sansserif: (
     'Source Sans Pro',
     'Verdana',
@@ -33,18 +32,15 @@ $font-monospace: (
     monospace,
 );
 
-// => breakpoints
-
+// -> breakpoints:
 $breakpoints: (
     'small': 767px,
     'medium': 992px,
     'large': 1200px,
 );
 
-
-// !VARIÁVEIS CSS
+// ========== VARIÁVEIS CSS ==========
 :root {
-
     /* !variáveis de cores */
     @each $name-color,
     $value-color in $colors {
@@ -53,7 +49,7 @@ $breakpoints: (
 
     /* !variáveis de fontes */
     // #1 - A função inspect() foi usada para que a fonte "Source Sans Pro"
-    // ... permaneça com as aspas no css final.
+    // permaneça com as aspas no css final.
     --font-sansserif: #{inspect($font-sansserif)}; // #1 //
     --font-serif: #{inspect($font-serif)}; // #1 //
     --font-monospace: #{inspect($font-monospace)}; // #1 //
