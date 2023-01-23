@@ -1,8 +1,4 @@
 @charset "UTF-8";
-@font-face {
-  font-family: "Source Sans Pro";
-  src: url("../../fonts/Source_Sans_Pro/SourceSansPro-Regular.ttf");
-}
 html {
   box-sizing: border-box;
 }
@@ -22,6 +18,12 @@ html {
   font-size: 16px;
   font-weight: 400;
   line-height: 1.4;
+}
+@font-face {
+  html {
+    font-family: "Source Sans Pro";
+    src: url("../../fonts/Source_Sans_Pro/SourceSansPro-Regular.ttf");
+  }
 }
 
 body {

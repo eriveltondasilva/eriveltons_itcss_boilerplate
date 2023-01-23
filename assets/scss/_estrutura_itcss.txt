@@ -1,37 +1,29 @@
 ITCSS -> Arquitetura de CSS/SASS
 
 01.Settings
+|	_.index.scss			#
+|	_a.variables.scss		#
+|	_b.functions.scss		#
+|	_c.mixins.scss			#
+|	_d.placeholders.scss	#
+02.Vendors
 |	_.index.scss
-|	_a.global.scss
-|	_b.variables.scss	
-02.Tools
-|	_.index.scss
-|	_a.functions.scss
-|	_b.mixins.scss
-|	_c.placeholders.scss
-03.Vendors
-|	_.index.scss
-04.Generics
-|	_.index.scss
-|	_a.generics.scss
-|	_b.typography.scss
-05.Elements
-|	_.index.scss
-|	_a.elements.scss
-06.Layout
-|	_.index.scss
-|	_a.grid.scss	
-07.Components
-|	_.index.scss
-|	_a.components.scss
-08.Objects
-|	_.index.scss
-|	_a.objects.scss
-09.Themes
-|	_.index.scss
-|	_a.no-js.scss	
-|	_b.dark.scss	
-10.Utilities
-|	_.index.scss
-|	_a.hacks.scss
-|	_b.shame.scss
+03.Base
+|	_.index.scss			#
+|	_a.generics.scss		#
+|	_b.typography.scss		#
+|	_c.elements.scss		#
+04.Layout
+|	_.index.scss			#
+|	_a.grid.scss			#	
+05.Components
+|	_.index.scss			#
+|	_a.components.scss		#
+06.Themes
+|	_.index.scss			#
+|	_a.dark.scss			#
+07.Utilities
+|	_.index.scss			#
+|	_a.no-js.scss			#
+|	_b.hacks.scss			#
+|	_c.shame.scss			#

@@ -1,4 +1,6 @@
 // *url('/assets/scss/01.Settings/_.index.scss');
 
-@import 'a.global';
-@import 'b.variables';
+@import 'a.variables';
+@import 'b.functions';
+@import 'c.mixins';
+@import 'd.placeholders';
