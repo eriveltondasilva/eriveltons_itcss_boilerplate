@@ -1,7 +1,17 @@
 // *url('/assets/scss/04.Generics/_b.typography.scss')
 
+// ========== TYPOGRAPHY ==========
 html {
-    color: var(--color-text);
+
+    // --------------------
+    /* !variáveis de fontes */
+    // #1 - A função inspect() foi usada para que a fonte "Source Sans Pro"
+    // permaneça com as aspas no css final.
+    --font-sansserif: #{inspect($font-sansserif)}; // #1 //
+    --font-serif: #{inspect($font-serif)}; // #1 //
+    --font-monospace: #{inspect($font-monospace)}; // #1 //
+
+    // --------------------
     font-family: var(--font-sansserif);
     font-size: 16px;
     font-weight: 400;

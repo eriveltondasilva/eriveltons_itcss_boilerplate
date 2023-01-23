@@ -3,18 +3,6 @@
   font-family: "Source Sans Pro";
   src: url("../../fonts/Source_Sans_Pro/SourceSansPro-Regular.ttf");
 }
-:root {
-  /* !variáveis de cores */
-  --color-primary: #00f;
-  --color-secondary: #0f0;
-  --color-background: #f5f5f5;
-  --color-text: #222;
-  /* !variáveis de fontes */
-  --font-sansserif: "Source Sans Pro", "Verdana", "Arial", "Helvetica", sans-serif;
-  --font-serif: "Source Serif Pro", "Times New Roman", "Times", "Georgia", serif;
-  --font-monospace: "Source Code Pro", "Courier", monospace;
-}
-
 html {
   box-sizing: border-box;
 }
@@ -26,7 +14,10 @@ html {
 }
 
 html {
-  color: var(--color-text);
+  /* !variáveis de fontes */
+  --font-sansserif: "Source Sans Pro", "Verdana", "Arial", "Helvetica", sans-serif;
+  --font-serif: "Source Serif Pro", "Times New Roman", "Times", "Georgia", serif;
+  --font-monospace: "Source Code Pro", "Courier", monospace;
   font-family: var(--font-sansserif);
   font-size: 16px;
   font-weight: 400;
@@ -34,7 +25,7 @@ html {
 }
 
 body {
-  background-color: var(--color-background);
+  width: 100%;
   height: 100vh;
   margin: 0;
   padding: 0;
@@ -64,6 +55,18 @@ video {
 
 textarea {
   resize: vertical;
+}
+
+:root {
+  --color-primary: #00f;
+  --color-secondary: #0f0;
+  --color-background: #f5f5f5;
+  --color-text: #222;
+}
+
+body {
+  background-color: var(--color-background);
+  color: var(--text);
 }
 
 .dark:root {
