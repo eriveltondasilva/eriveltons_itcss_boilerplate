@@ -1,16 +1,22 @@
 // *url('/assets/scss/06.Themes/_a.default.scss')
 
-// ========== THEME: DEFAULT ==========
+/*----------------------------------------*\
+//#THEME: DEFAULT
+\*----------------------------------------*/
+
 :root {
 
-    // variáveis de cores
+    /**
+     * Variáveis de cores
+     *
+     */
     @each $name-color,
     $value-color in $colors {
         --color-#{$name-color}: #{$value-color};
     }
 }
 
-// --------------------
+
 body {
     background-color: var(--color-background);
     color: var(--text);

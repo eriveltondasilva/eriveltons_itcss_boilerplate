@@ -1,10 +1,15 @@
 // *url('/assets/scss/06.Themes/_b.dark.scss')
 
-// ========== THEME: DARK ==========
+/*----------------------------------------*\
+//#THEME: DARK
+\*----------------------------------------*/
+
 .dark:root {
 
-    // --------------------
-    /* !variáveis de cores do dark mode */
+    /**
+     * Variáveis de cores do dark mode
+     *
+     */
     @each $name-color,
     $value-color in $colors {
         @if $name-color =='text' {
@@ -20,10 +25,9 @@
         }
     }
 
-    ;
-
     // TODO: código para definir cada cor do modo dark, basta comentar o código acima e editar o mao colors-dark 
     // @each $name-color, $value-color in $colors-dark {
     //     --color-#{$name-color}: #{$value-color};
     // }
+
 }

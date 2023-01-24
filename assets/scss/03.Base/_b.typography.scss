@@ -1,35 +1,31 @@
 // *url('/assets/scss/03.Base/_b.typography.scss')
 
-// ========== TYPOGRAPHY ==========
+/*----------------------------------------*\
+//#TYPOGRAPHY
+\*----------------------------------------*/
+
+@font-face {
+    font-family: 'Source Sans Pro';
+    src: url('../../fonts/Source_Sans_Pro/SourceSansPro-Regular.ttf');
+};
+
 html {
-
-    @font-face {
-        font-family: 'Source Sans Pro';
-        src: url('../../fonts/Source_Sans_Pro/SourceSansPro-Regular.ttf');
+    /**
+     * Variáveis css das fontes
+     *
+     * 1. A função inspect() faz as fontes continuarem com suas aspas.
+     *
+     */
+    @each $font, $value in $fonts {
+        --font-#{$font}: #{inspect($value)}; /* [1] */
     }
-    
-    // @font-face {
-    //     font-family: 'Source Serif Pro';
-    //     src: url('../../fonts/Source_Serif_Pro/SourceSerifPro-Regular.ttf');
-    // }
-    
-    // @font-face {
-    //     font-family: Poppins;
-    //     src: url('../../fonts/Poppins/Poppins-Regular.ttf');
-    // }
-    
 
-    // --------------------
-    /* !variáveis de fontes */
-    // #1 - A função inspect() foi usada para que a fonte "Source Sans Pro"
-    // permaneça com as aspas no css final.
-    --font-sansserif: #{inspect($font-sansserif)}; // #1 //
-    --font-serif: #{inspect($font-serif)}; // #1 //
-    --font-monospace: #{inspect($font-monospace)}; // #1 //
-
-    // --------------------
+    /**
+     * Definições tipográficas
+     */
     font-family: var(--font-sansserif);
     font-size: 16px;
     font-weight: 400;
     line-height: 1.4;
+    
 }
