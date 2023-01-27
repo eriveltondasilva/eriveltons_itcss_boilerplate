@@ -86,8 +86,8 @@ textarea {
    * Variáveis de cores
    *
    */
-  --color-primary: #00f;
-  --color-secondary: #0f0;
+  --color-primary: blue;
+  --color-secondary: green;
   --color-background: #f5f5f5;
   --color-text: #222;
 }
@@ -106,7 +106,7 @@ body {
    *
    */
   --color-primary: #000099;
-  --color-secondary: #009900;
+  --color-secondary: #004d00;
   --color-background: #313131;
   --color-text: lightgray;
 }

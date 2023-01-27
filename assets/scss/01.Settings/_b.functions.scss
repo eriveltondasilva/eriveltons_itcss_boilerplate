@@ -19,8 +19,3 @@
 @function color($color) {
     @return map-get($colors, $color);
 };
-
-// função para pegar as cores do map $colors-dark
-@function color-dark($color) {
-    @return map-get($colors-dark, $color);
-};

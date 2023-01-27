@@ -5,7 +5,6 @@
 \*----------------------------------------*/
 
 .dark:root {
-
     /**
      * Variáveis de cores do dark mode
      *
@@ -23,7 +22,8 @@
         @else {
             --color-#{$name-color}: #{dark($value-color, 60%)};
         }
-    }
+    };
+
 
     // TODO: código para definir cada cor do modo dark, basta comentar o código acima e editar o mao colors-dark 
     // @each $name-color, $value-color in $colors-dark {

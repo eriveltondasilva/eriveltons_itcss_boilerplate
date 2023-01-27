@@ -5,7 +5,6 @@
 \*----------------------------------------*/
 
 :root {
-
     /**
      * Variáveis de cores
      *
@@ -13,10 +12,11 @@
     @each $name-color,
     $value-color in $colors {
         --color-#{$name-color}: #{$value-color};
-    }
+    };
+
 }
 
-
+// Coloque aqui os elementos relativo a cores do tema padrão.
 body {
     background-color: var(--color-background);
     color: var(--text);
