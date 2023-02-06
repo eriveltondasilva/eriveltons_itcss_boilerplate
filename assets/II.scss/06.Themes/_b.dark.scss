@@ -5,29 +5,29 @@
 \*----------------------------------------*/
 
 .dark:root {
-    /**
+    /** ----------------------------------------
      * Variáveis de cores do dark mode
-     *
      */
     @each $name-color,
     $value-color in $colors {
-        @if $name-color =='text' {
-            --color-#{$name-color}: #{light($value-color, 20%)};
+
+        @if $name-color == "background" {
+            --color-#{$name-color}: #{dark($value-color, 10%)};
         }
 
-        @else if $name-color =='background' {
-            --color-#{$name-color}: #{dark($value-color, 20%)};
+        @else if $name-color == "text" {
+            --color-#{$name-color}: #{light($value-color, 10%)};
         }
 
         @else {
-            --color-#{$name-color}: #{dark($value-color, 60%)};
+            --color-#{$name-color}: #{dark($value-color, 80%)};
+
         }
-    };
 
+    }
 
-    // TODO: código para definir cada cor do modo dark, basta comentar o código acima e editar o mao colors-dark 
-    // @each $name-color, $value-color in $colors-dark {
-    //     --color-#{$name-color}: #{$value-color};
-    // }
+    ;
+
 
 }
+
