@@ -83,6 +83,15 @@ body {
   color: var(--color-text);
 }
 
+.dark-mode {
+  padding: 0 10px;
+  cursor: pointer;
+}
+
+.fa-sun {
+  display: none;
+}
+
 /*----------------------------------------*\
 //#THEME: DARK
 \*----------------------------------------*/

@@ -17,3 +17,12 @@ body {
     background-color: v(background);
     color: v(text);
 }
+
+.dark-mode {
+    padding: 0 10px;
+    cursor: pointer;
+}
+
+.fa-sun {
+    display: none;
+}
