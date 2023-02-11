@@ -1,39 +1,48 @@
 // #Dark Mode:
 
-$(".js-dark-mode").click(() => {
-    $("html").toggleClass("dark");
+// -Constantes:
+
+const HTML = document.querySelector("html");
+const MODE_DARK = document.querySelector(".js-dark-mode");
+
+
+// -Eventos:
+
+MODE_DARK.addEventListener("click", () => {
+    changeMode();
+    saveMode();
 });
 
 
+// -Funções:
 
-// // function(): mudar para dark-mode
-// function changeMode() {
-//     $("body").toggleClass("dark-mode");
-// };
-
-// // function(): salvar ou remover dark-mode
-// function saveMode() {
-//     if ($("body").hasClass("dark-mode")) {
-//         localStorage.setItem("dark-mode", 1);
-//     } else {
-//         localStorage.removeItem("dark-mode");
-//     };
-// };
-
-// function(): Carregar dark mode
-// function loadMode() {
-//     const darkMode = localStorage.getItem("dark-mode");
-
-//     if (darkMode) {
-//         changeMode();
-//     };
-// };
+// Adicionar ou remove a classe "dark" do ":root" para ativar ou desativar o modo dark
+function changeMode() {
+    HTML.classList.toggle("dark");
+};
 
 
-// 
-// $("#change-mode").click(() => {
-//     changeMode();
-//     saveMode();
-// });
+// Salvar ou remover dark-mode do localStorage
+function saveMode() {
+    if ($("html").hasClass("dark")) {
+        localStorage.setItem("dark-mode", "on");
+    } else {
+        localStorage.removeItem("dark-mode")
+    };
+};
 
-// loadMode();
+
+// Carregar dark mode
+function loadMode() {
+    const DARK_MODE = localStorage.getItem("dark-mode");
+
+    if (DARK_MODE) {
+        changeMode();
+    }
+};
+
+loadMode();
+
+
+// #
+
