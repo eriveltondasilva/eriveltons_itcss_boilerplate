@@ -5,27 +5,14 @@
 \*----------------------------------------*/
 
 .dark:root {
-    /**
-     * Variáveis de cores do dark mode
-     */
-    @each $name-color,
-    $value-color in $colors {
+    $colors: (
+        'background'  : #222,
+        'onBackground': #f5f5f5,
+    );
 
-        @if $name-color =="background" {
-            --color-#{$name-color}: #{dark($value-color, 10%)};
-        }
-
-        @else if $name-color =="text" {
-            --color-#{$name-color}: #{light($value-color, 10%)};
-        }
-
-        @else {
-            --color-#{$name-color}: #{dark($value-color, 70%)};
-
-        }
-
+    body {
+        background-color: color(background);
     }
-
 
     .fa-moon {
         display: none;

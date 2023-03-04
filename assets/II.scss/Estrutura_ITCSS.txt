@@ -31,6 +31,5 @@
 
 07.Utilities
 |	_.index.scss			# Índice que reúne todos os arquivos da pasta '07.Utilities' para exportar para o arquivo 'main.scss'.
-|	_a.no-js.scss			# Definições para caso o JavaScripts não esteja funcionando.
-|	_b.hacks.scss			# Todas as definições que deverá se sobrepor às demais e sempre terá '!important' ao final de cada declaração.
-|	_c.shame.scss			# Declarações que funcionam mesmo sem se saber o porquê (devem ser evitadas e, posteriormente, eliminadas).
+|	_a.hacks.scss			# Todas as definições que deverá se sobrepor às demais e sempre terá '!important' ao final de cada declaração.
+|	_b.shame.scss			# Declarações que funcionam mesmo sem se saber o porquê (devem ser evitadas e, posteriormente, eliminadas).

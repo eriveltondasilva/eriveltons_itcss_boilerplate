@@ -4,24 +4,16 @@
 //#THEME: DEFAULT
 \*----------------------------------------*/
 
-:root {
-    @each $name-color,
-    $value-color in $colors {
-        --color-#{$name-color}: #{$value-color};
-    };
-
-}
-
 // Coloque aqui os elementos relativo a cores do tema padrão.
 body {
-    background-color: v(background);
-    color: v(text);
-    transition: all ease-in-out 0.2s;
+    background-color: color(background);
+    color           : color(onBackground);
+    transition      : all ease-in-out 0.2s;
 }
 
 .dark-mode {
     padding: 0 14px;
-    cursor: pointer;
+    cursor : pointer;
 
 }
 

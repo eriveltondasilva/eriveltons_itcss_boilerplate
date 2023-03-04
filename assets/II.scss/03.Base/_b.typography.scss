@@ -6,14 +6,8 @@
 
 
 html {
-    /** --------------------
-     * Variáveis css das fontes
-     * 1. A função inspect() faz as fontes continuarem com suas aspas.
-     */
-    --font-sansserif: #{inspect(font(sansserif))};
-
     font-family: font(sansserif);
-    font-size: 16px;
+    font-size  : 16px;
     font-weight: normal;
     line-height: 1.25;
 }
