@@ -3,11 +3,13 @@
 /*----------------------------------------*\
 //#THEME: DARK
 \*----------------------------------------*/
+$onBackground-color: #222;
 
 .dark:root {
+
   body {
     background-color: dark_color(background);
-    color           : dark_color(onBackground);
+    color: dark_color(onBackground);
   }
 
   .fa-moon {
