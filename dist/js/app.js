@@ -1,48 +1,38 @@
-// #Dark Mode:
+// #DARK MODE
 
-// -Constantes:
-
-const HTML = document.querySelector("html");
+// *Variáveis:
+const HTML = document.documentElement;
 const MODE_DARK = document.querySelector(".js-dark-mode");
 
-
-// -Eventos:
-
+// *Eventos:
 MODE_DARK.addEventListener("click", () => {
-    changeMode();
-    saveMode();
+  changeMode();
+  saveMode();
 });
 
-
-// -Funções:
-
+// *Funções:
 // Adicionar ou remove a classe "dark" do ":root" para ativar ou desativar o modo dark
 function changeMode() {
-    HTML.classList.toggle("dark");
-};
-
+  HTML.classList.toggle("dark");
+}
 
 // Salvar ou remover dark-mode do localStorage
 function saveMode() {
-    if ($("html").hasClass("dark")) {
-        localStorage.setItem("dark-mode", "on");
-    } else {
-        localStorage.removeItem("dark-mode")
-    };
-};
+  let mode_dark = HTML.classList.contains("dark");
 
+  if (mode_dark) {
+    localStorage.setItem("dark-mode", "on");
+    return;
+  }
+  localStorage.removeItem("dark-mode");
+}
 
-// Carregar dark mode
-function loadMode() {
-    const DARK_MODE = localStorage.getItem("dark-mode");
+// Carregar dark mode(função autodeclarada!)
+(function loadMode() {
+  const DARK_MODE = localStorage.getItem("dark-mode");
 
-    if (DARK_MODE) {
-        changeMode();
-    }
-};
-
-loadMode();
-
-
-// #
+  if (DARK_MODE) {
+    changeMode();
+  }
+})();
 

@@ -6,17 +6,16 @@
 
 // Coloque aqui os elementos relativo a cores do tema padrão.
 body {
-    background-color: color(background);
-    color           : color(onBackground);
-    transition      : all ease-in-out 0.2s;
+  background-color: color(background);
+  color           : color(onBackground);
+  transition      : all ease-in-out 0.2s;
 }
 
 .dark-mode {
-    padding: 0 14px;
-    cursor : pointer;
-
+  padding: 0 14px;
+  cursor : pointer;
 }
 
 .fa-sun {
-    display: none;
+  display: none;
 }

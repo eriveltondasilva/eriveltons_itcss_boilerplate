@@ -20,6 +20,11 @@
     @return map-get($colors, $color);
 }
 
+// função para pegar as cores do map $colors
+@function dark_color($color) {
+    @return map-get($dark_colors, $color);
+}
+
 
 // *Função que lida com as variáveis:
 @function v($n1, $n2: "color") {
