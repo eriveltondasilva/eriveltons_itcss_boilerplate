@@ -4,52 +4,36 @@
 // #FUNÇÕES_SASS
 // ----------------------------------------
 
-
-// -> Funções que lidam com as cores:
+// *Funções que lidam com as cores:
 // função para tornar as cores mais escuras conforme a porcentagem
 @function dark($color, $percent) {
     @return mix($color, #000, $percent);
 }
-
-;
 
 // função para tornar as cores mais claras conforme a porcentagem
 @function light($color, $percent) {
     @return mix($color, #fff, $percent);
 }
 
-;
-
 // função para pegar as cores do map $colors
 @function color($color) {
     @return map-get($colors, $color);
 }
 
-;
 
-
-// -> Função que lida com as variáveis:
-// função para pegar as cores do map $colors
+// *Função que lida com as variáveis:
 @function v($n1, $n2: "color") {
     @return var(--#{$n2}-#{$n1});
 }
 
-;
 
-
-// -> Função que lida com as fontes:
-// função para pegar as cores do map $colors
+// *Função que lida com as fontes:
 @function font($font) {
     @return map-get($fonts, $font);
 }
 
-;
 
-
-// -> Função que lida com os breakpoints:
-// função para pegar as cores do map $colors
+// *Função que lida com os breakpoints:
 @function breakpoint($breakpoint) {
     @return map-get($breakpoints, $breakpoint);
 }
-
-;

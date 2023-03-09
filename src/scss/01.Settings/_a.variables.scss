@@ -4,7 +4,7 @@
 // #VARIÁVEIS SASS
 // -------------------------------------
 
-// -> Colors:
+// *Colors:
 $colors: (
     'primary'     : blue,
     'secondary'   : orange,
@@ -12,12 +12,13 @@ $colors: (
     'surface'     : #f5f5f5,
     'error'       : #f5f5f5,
     'onPrimary'   : #222,
+    'onSecondary' : #222,
     'onBackground': #222,
-    'onSurface'   : #222,
+    'onSurface'   : #222
 );
 
 
-// -> breakpoints:
+// *Breakpoints:
 $breakpoints: (
     'small': 600px,
     'med'  : 900px,
@@ -25,7 +26,7 @@ $breakpoints: (
 );
 
 
-// -> Fonts:
+// *Fonts:
 $fonts: (
     "sansserif": (
         'Poppins',
@@ -49,4 +50,3 @@ $fonts: (
         monospace,
     )
 );
-
